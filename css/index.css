@@ -2,6 +2,10 @@
     background: #469689;
 }
 
+.issueNav:hover {
+  cursor: pointer;
+}
+
 body {
     font-family: montserrat;
 }
