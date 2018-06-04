@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+    <style>
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row bg-clr">
+            <div class="col-md-6 text-white pt-2 pb-2">
+                <span class="ft-16"> Oppia ></span>
+                <span class="ft-15"> Eating Disorders ></span>
+                <span class="ft-14"> Statistics </span>
+            </div>
+            <div class="col-md-6" style="padding-right: 0">
+                <ul class="test-disp">
+                    <li class="disp">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </li>
+                    <li class="disp">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                    </li>
+                    <li class="disp">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </li>
+                    <li class="disp">
+                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    </li>
+                    <li class="disp">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </li>
+                    <li class="disp">
+                        <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                    </li>
+                    <li class="disp">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row content pt-4">
+            <div class="col-md-2 border_gray ft-14">
+                <div class="row">
+                    <div class="col-md bor-btm clr-green pt-2 pb-2">
+                        Issue 1
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md bor-btm clr-green pt-2 pb-2">
+                        Issue 2
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md bor-btm clr-green pt-2 pb-2 bg-clr text-white">
+                        Issue 3
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md bor-btm clr-green pt-2 pb-2">
+                        Issue 4
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md bor-btm clr-green pt-2 pb-2">
+                        Issue 5
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-9 border_gray">
+                <div class="row">
+                    <div class="col-md bg-clr text-center d-flex justify-content-center text-white pt-2 pb-2">
+                        Learner's answered multiple times at card 'state 2'
+                        <br> before quitting the exploration.
+                    </div>
+                </div>
+                <div class="text-center">
+                  <div class="row">
+                    <div class="col-md-4" style="margin-left: -40px;">
+                        <div class="hexagon">
+                          <div class="text">
+                            <button type="button" class="btn state_1 modal-btn ft-14 playthrough_content" data-toggle="modal" data-target="#myModal" style="padding-top: 20px; padding-right: 5px;">
+                                View <br> Playthrough 1
+                            </button>
+                          </div>
+                        </div>
+
+                      <!-- The Modal -->
+                      <div class="modal" id="myModal">
+                          <div class="modal-dialog">
+                              <div class="modal-content border-rad">
+
+                                  <!-- Modal Header -->
+                                  <div class="modal-header d-flex justify-content-center">
+                                      <h5 class="modal-title">Playthrough 1</h5>
+
+                                  </div>
+
+                                  <!-- Modal body -->
+                                  <div class="modal-body ft-500" style="padding-bottom: 8rem; margin-left:0.5rem; margin-right: 0.5rem; ">
+                                    <div class="row pt-2">
+                                      <button type="button" name="button" onclick="showRemainingActions()" class="btn-arrow" id="arrowDiv" style="display: block;"><i class="arrow up"></i></button>
+                                    </div>
+                                    <div class="row pt-2" style="margin-top: 0.5rem;">
+                                      <div id="remainingActions" style="display: none; text-align: left; margin-left: 0.2rem;">
+                                        1. Starts exploration at card 'state1'.
+                                        <br>
+                                        2. Moves to card 'state2' by the 'ContinueButton' interaction after spending 15 seconds on this card.
+                                      </div>
+                                      <div class="highlight" style="text-align: left; margin-left: 0.2rem;">
+                                        3. Submitted the following answers in 'state2' and stayed in the same card
+                                        <br> <br>
+                                        <table style="width:100%">
+                                          <tr>
+                                            <th>Answer</th>
+                                            <th>Feedback</th>
+                                          </tr>
+                                          <tr>
+                                            <td>answer1</td>
+                                            <td>Try again</td>
+                                          </tr>
+                                          <tr>
+                                            <td>answer2</td>
+                                            <td>Try again</td>
+                                          </tr>
+                                          <tr>
+                                            <td>answer3</td>
+                                            <td>Not quire there, getting close</td>
+                                          </tr>
+                                          <tr>
+                                            <td>answer4 answer4 answer4 answer4 answer4 answer4 answer4</td>
+                                            <td>Try again</td>
+                                          </tr>
+                                        </table>
+                                        <br>
+                                        4. Quits the exploration after spending 280 seconds in this card.
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Modal footer -->
+                                  <div class="modal-footer">
+                                    <button type="button" class="bg-clr text-white ft-14 btn btn_resolve" data-dismiss="modal">
+                                        Return to Playthroughs
+                                    </button>
+                                  </div>
+
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4" style="margin-left: -40px;">
+                        <div class="hexagon">
+                          <div class="text">
+                            <button type="button" class="btn state_1 modal-btn ft-14 playthrough_content" data-toggle="modal" data-target="#myModal1" style="padding-top: 20px; padding-right: 5px;">
+                                View <br> Playthrough 2
+                            </button>
+                          </div>
+                        </div>
+
+                        <!-- The Modal -->
+                        <div class="modal" id="Modal1">
+                            <div class="modal-dialog">
+                                <div class="modal-content border-rad">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header d-flex justify-content-center">
+                                        <h5 class="modal-title "><div class="clr-red ft-18">Problematic card
+                                            </div> Learner actions in 'State2'</h5>
+
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body ft-500">
+                                        1. Learner submits an answer and stays in the same card.
+                                        <div class="text-center">
+                                            Answer: 'answer1'
+                                            <br> Feedback: 'Try again'
+                                        </div>
+                                        <br> 2. Learner submits an answer and stays in the same card.
+                                        <div class="text-center">
+                                            Answer: 'answer2'
+                                            <br> Feedback: 'Try again'
+                                        </div>
+                                        <br> 3. Learner submits an answer and stays in the same card.
+                                        <div class="text-center">
+                                            Answer: 'answer3'
+                                            <br> Feedback: 'Not quite, getting close'.
+                                        </div>
+                                        <br> 4. Learner submits an answer and stays in the same card.
+                                        <div class="text-center">
+                                            Answer:
+                                            <br> 'answer4 answer4 answer4 answer4,
+                                            <br> answer4 answer4 answer4 answer4'
+                                            <br> Feedback: 'Not quite, getting close'.
+                                        </div>
+                                        <br> 5. Learner quits the exploration after 280 seconds
+                                        <br>on
+                                        <br> this card.
+
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body ft-500">
+                                       <div class="clr-red text-center ft-18"> Suggestions
+                                        </div>
+                                        To resolve this issue, the suggested approach is: <br>
+                                        - Make sure the learner responses above, classify under<br> a Feedback.<br>
+                                        - Make sure that the card explaining the concept, leading to the <br> current card is accurate.<br>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-done text-white" data-dismiss="modal">Done</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+
+                    <div class="row pt-4">
+                      <p class="suggestion_header">To resolve this issue, the suggested approach is: </p>
+                      <div class="pt-2">
+                        <ul class="tips">
+                          <li>Ensure that the highlighted learner responses in the problematic cards are classified under an explicit feedback</li>
+                          <li>Ensure that the card explaining the concept is accurate</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="pt-4 pb-2 d-flex justify-content-end">
+                        <button type="button" onclick="submit()" class="bg-clr text-white ft-14 btn btn_resolve">
+                            Mark as Resolved
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function submit() {
+            alert("Marked as Resolved!!");
+        }
+
+        function showRemainingActions() {
+          document.getElementById('remainingActions').style.display = "block";
+          document.getElementById('arrowDiv').style.display = "none";
+        }
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
