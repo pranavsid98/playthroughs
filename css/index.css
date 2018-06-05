@@ -71,6 +71,14 @@ ul.test-disp {
     border-bottom: 2px solid #b2b2bb;
 }
 
+.bor-right {
+    border-right: 1px solid #b2b2bb;
+}
+
+.bor-left {
+    border-left: 1px solid #b2b2bb;
+}
+
 .clr-green {
     color: #66A79D;
 }
@@ -81,13 +89,21 @@ ul.test-disp {
 
 .btn_resolve {
     padding: .35rem 1.2rem;
-    border-radius: 20px !important;
+    border-radius: 10px !important;
 }
 
 .btn {
     border-radius: 0;
 }
 
+.state_editor_link {
+  text-decoration: underline;
+  color: blue;
+}
+
+.state_editor_link:hover {
+  cursor: pointer;
+}
 
 .clr-red {
     color: #EC6448;

@@ -78,7 +78,10 @@
 
             <div class="col-md-9 border_gray" style="display:block;" id="issue1">
                 <div class="row">
-                    <div class="col-md bg-clr text-center d-flex justify-content-center text-white pt-2 pb-2">
+                  <div class="col-md-2 bor-btm bor-right clr-green text-center pt-2 pb-2">
+                    Issue 1
+                  </div>
+                    <div class="col-md-10 bor-left text-center d-flex justify-content-center bor-btm pt-2 pb-2">
                         Several learners exited the exploration in less than a minute.
                     </div>
                 </div>
@@ -86,7 +89,7 @@
                   <p class="suggestion_header">To resolve this issue, the suggested approach is: </p>
                   <div class="pt-2">
                     <ul class="tips">
-                      <li>Review the cards up to and including "state2" for errors, ambiguities or insufficient motivation.</li>
+                      <li>Review the cards up to and including <span class="state_editor_link" onclick="visitStateEditor('state2')">"state2"</span> for errors, ambiguities or insufficient motivation.</li>
                     </ul>
                   </div>
                 </div>
@@ -144,7 +147,7 @@
                     </div>
                   </div>
                     <div class="pt-4 pb-2 d-flex justify-content-end">
-                        <button type="button" onclick="submit()" class="bg-clr text-white ft-14 btn btn_resolve">
+                        <button type="button" onclick="resolveIssue(1)" class="bg-clr text-white ft-14 btn btn_resolve">
                             Mark as Resolved
                         </button>
                     </div>
@@ -152,7 +155,10 @@
 
                 <div class="col-md-9 border_gray" style="display:none;" id ="issue2">
                     <div class="row">
-                        <div class="col-md bg-clr text-center d-flex justify-content-center text-white pt-2 pb-2">
+                      <div class="col-md-2 bor-btm bor-right clr-green text-center pt-2 pb-2">
+                        Issue 2
+                      </div>
+                        <div class="col-md-10 bor-left text-center d-flex justify-content-center bor-btm pt-2 pb-2">
                             Several learners ended up in a cyclic loop revisiting card "state" many times.
                         </div>
                     </div>
@@ -160,7 +166,7 @@
                       <p class="suggestion_header">To resolve this issue, the suggested approach is: </p>
                       <div class="pt-2">
                         <ul class="tips">
-                          <li>Check that the concept presented in "state1" has been reinforced sufficiently by the time the learner gets to "state3".</li>
+                          <li>Check that the concept presented in <span class="state_editor_link" onclick="visitStateEditor('state1')">"state1"</span> has been reinforced sufficiently by the time the learner gets to <span class="state_editor_link" onclick="visitStateEditor('state3')">"state3"</span>.</li>
                         </ul>
                       </div>
                     </div>
@@ -239,7 +245,7 @@
                         </div>
                       </div>
                         <div class="pt-4 pb-2 d-flex justify-content-end">
-                            <button type="button" onclick="submit()" class="bg-clr text-white ft-14 btn btn_resolve">
+                            <button type="button" onclick="resolveIssue(2)" class="bg-clr text-white ft-14 btn btn_resolve">
                                 Mark as Resolved
                             </button>
                         </div>
@@ -247,7 +253,10 @@
 
             <div class="col-md-9 border_gray" style="display:none;" id="issue3">
                 <div class="row">
-                    <div class="col-md bg-clr text-center d-flex justify-content-center text-white pt-2 pb-2">
+                  <div class="col-md-2 bor-btm bor-right clr-green text-center pt-2 pb-2">
+                    Issue 3
+                  </div>
+                    <div class="col-md-10 bor-left text-center d-flex justify-content-center bor-btm pt-2 pb-2">
                         Several learners submitted answers to card "state2" several times, then gave up and quit.
                     </div>
                 </div>
@@ -255,7 +264,7 @@
                   <p class="suggestion_header">To resolve this issue, the suggested approach is: </p>
                   <div class="pt-2">
                     <ul class="tips">
-                      <li>Check the wording of the card to ensure it isn't confusing.</li>
+                      <li>Check the wording of the card <span class="state_editor_link" onclick="visitStateEditor('state2')">"state2"</span> to ensure it isn't confusing.</li>
                       <li>Consider addressing the answers submitted in the sample playthroughs explicitly, using answer groups.</li>
                     </ul>
                   </div>
@@ -342,7 +351,7 @@
                     </div>
                   </div>
                     <div class="pt-4 pb-2 d-flex justify-content-end">
-                        <button type="button" onclick="submit()" class="bg-clr text-white ft-14 btn btn_resolve">
+                        <button type="button" onclick="resolveIssue(3)" class="bg-clr text-white ft-14 btn btn_resolve">
                             Mark as Resolved
                         </button>
                     </div>
@@ -354,8 +363,12 @@
     </div>
 
     <script>
-        function submit() {
-            alert("Marked as Resolved!!");
+      function visitStateEditor(stateName) {
+        alert("This will lead to the state editor for card: "+stateName);
+      }
+
+        function resolveIssue(issueNum) {
+            alert("Marked as Resolved! This will remove the issue from the list of issues (while actual implementation on Angular happpens).");
         }
 
         function showRemainingActions(issueNum, maxHidden) {
